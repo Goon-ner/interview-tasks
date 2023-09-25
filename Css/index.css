@@ -1,0 +1,66 @@
+.dialog-container {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #777;
+}
+
+.dialog {
+  background-color: #fff;
+  max-height: 500px;
+  max-width: 350px;
+}
+.dialog__header {
+  background-color: #ddd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.dialog__header-title {
+  max-width: 230px;
+  white-space: nowrap;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+}
+.dialog__header-subtitle {
+  max-width: 230px;
+}
+.dialog__header-button {
+  max-width: 120px;
+}
+.dialog__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.dialog__content-block_left {
+  width: 30%;
+  border-right: 1px solid #ccc;
+}
+.dialog__content-block_right {
+  overflow-y: scroll;
+  width: 70%;
+  height: 400px;
+}
+.dialog__footer {
+  background-color: #ddd;
+  overflow-wrap: break-word;
+  text-align: center;
+}
+
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 500px;
+  width: 100%;
+}

@@ -1,0 +1,61 @@
+.dialog-container {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #777;
+}
+
+.dialog {
+  background-color: #fff;
+  max-height: 500px;
+  max-width: 350px;
+
+  &__header {
+    background-color: #ddd;
+    display: flex;
+  }
+
+  &__header-title {
+    max-width: 230px;
+    white-space: nowrap;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+  }
+  &__header-subtitle {
+    max-width: 230px;
+  }
+
+  &__header-button {
+    max-width: 120px;
+  }
+  &__content {
+    display: flex;
+  }
+  &__content-block {
+    &_left {
+      width: 30%;
+      border-right: 1px solid #ccc;
+    }
+
+    &_right {
+      overflow-y: scroll;
+      width: 70%;
+      height: 400px;
+    }
+  }
+
+  &__footer {
+    background-color: #ddd;
+    overflow-wrap: break-word;
+    text-align: center;
+  }
+}
+.content {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 500px;
+  width: 100%;
+}
